@@ -1,0 +1,42 @@
+private
+default
+protected 
+public
+
+CountDownLatch: Suppose a stone can be lifted by 10 people so you will wait for all 10 to come. Then only you can lift the stone.
+
+CyclicBarrier: If you are going to a picnic, and you need to first meet at some common point from where you all will start your journey.
+
+With a latch, the waiters wait for the last arriving thread to arrive, but those arriving threads don't do any waiting themselves.
+With a barrier, all threads arrive and then wait for the last to arrive.
+
+
+Basically it's a shiping and logistic domain project where i am working on tracking api which was developed in jersey rest services and we converted in spring boot application as they do not want dependency on jboss or moving to cloud.
+
+Countdown latch is basically a synchronisation technique which allowes one or more than thhread to wait for cetain set of task to complete
+
+GN/GGN/HR/5572/170806
+HRGGN/E/2017/03340
+HCL Technologies Limited,
+Plot No 3,Udyog Vihar,
+Phase-1,Gurgaon122016
+
+PF Number           : MH/PUN/34224/241141
+PF UAN Number       : 100949843066
+
+
+
+
+java -Dc=testcore -jar post.jar D:\solr-6.5.0\example\exampledocs\manufacturers.xml
+
+set PATH=C:\Program Files\Docker\Docker\Re;sources\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_40\bin;C:\Program Files\Git\cmd;D:\AK00487304\apache-maven-3.3.9\bin
+set M2_HOME=D:\AK00487304\apache-maven-3.3.9	
+The HUB >>IT Home Page>> 
+Requester Console >> Support function >> Global Mobility -> Relocation / Deputation /Repatriation -> Location / Building Change
+
+
+1.      Capability to handle Large volume of document
+2.      Range of experience of the team around Search
+3.      Ability to eliminate redundant documents during indexing (runtime)
+4.      Box Content
+
