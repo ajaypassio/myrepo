@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration monitorInterval="60">
+	<Properties>
+		<Property name="log-path">applogs</Property>
+		<Property name="archive">accountServiceArchive</Property>
+	</Properties>
+	<Appenders>
+		<Console name="Console-Appender" target="SYSTEM_OUT">
+			<PatternLayout>
+				<pattern>
+					[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n
+				</pattern>
+				>
+			</PatternLayout>
+		</Console>
+		<File name="App-File-Appender" fileName="${log-path}/app_log.log">
+			<PatternLayout>
+				<pattern>
+					[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n
+				</pattern>
+			</PatternLayout>
+		</File>
+		<File name="SpringBoot-File-Appender" fileName="${log-path}/springboot_log.log">
+			<PatternLayout>
+				<pattern>
+					[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n
+				</pattern>
+			</PatternLayout>
+		</File>
+		<RollingFile name="RollingFile-Appender" fileName="${log-path}/rollingfile.log"
+			filePattern="${archive}/rollingfile.log.%d{yyyy-MM-dd-hh-mm}.gz">
+			<PatternLayout
+				pattern="[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n" />
+			<Policies>
+				<TimeBasedTriggeringPolicy />
+				<SizeBasedTriggeringPolicy size="1 KB" />
+			</Policies>
+			<DefaultRolloverStrategy max="30" />
+		</RollingFile>
+	</Appenders>
+	<Loggers>
+
+		<Logger name="org.springframework.web" level="all"
+			additivity="true">
+			<include resource="org/springframework/boot/logging/logback/base.xml" />
+			<AppenderRef ref="SpringBoot-File-Appender" />
+			<AppenderRef ref="RollingFile-Appender" />
+			<AppenderRef ref="Console-Appender" />
+		</Logger>
+		<Logger name="com.paymore.account" level="info" additivity="true">
+			<AppenderRef ref="App-File-Appender" />
+			<AppenderRef ref="RollingFile-Appender" />
+		</Logger>
+
+
+	</Loggers>
+</Configuration>

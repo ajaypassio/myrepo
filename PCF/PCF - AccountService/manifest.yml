@@ -1,0 +1,11 @@
+---
+applications:
+- name: AccountService
+  memory: 400M
+  instances: 1  
+  routes:
+  - route: mypcfaccount.cfapps.io
+  path: AccountService-1.0.jar
+  
+  
+  

@@ -1,0 +1,9 @@
+---
+applications:
+- name: EurekaServer
+  memory: 512M
+  instances: 1
+  routes:
+  - route: mypcfeureka.cfapps.io
+  path: EurekaServer-0.0.1-SNAPSHOT.jar
+  

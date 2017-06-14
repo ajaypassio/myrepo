@@ -1,0 +1,9 @@
+---
+applications:
+- name: APIGateway
+  memory: 512M
+  instances: 1
+  routes:
+  - route: mypcfgateway.cfapps.io
+  path: APIGateway-0.0.1-SNAPSHOT.jar
+  
