@@ -1,0 +1,20 @@
+spring.application.name=gateway
+# N.B. this is the default:
+#server.port=9092
+
+
+eureka.instance.appname=${spring.application.name}
+#eureka.client.service-url.defaultZone=http://localhost:9193/eureka/
+eureka.client.service-url.defaultZone=https://mypcfeureka.cfapps.io/eureka/
+
+#zuul.routes.account.path=/account/**
+#zuul.routes.account.service-id=account
+
+#zuul.routes.account.path=/account/**
+#zuul.routes.servicea.appendPrefix=https://mypcfaccount.cfapps.io/
+zuul.routes.account.url=https://mypcfaccount.cfapps.io/
+zuul.routes.account.service-id=account
+
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds=60000
+ribbon.eureka.enabled=true
+ribbon.ServerListRefreshInterval=1
