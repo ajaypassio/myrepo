@@ -1,0 +1,6 @@
+spring.application.name=account
+spring.cloud.config.server.git.clone-on-start=true
+account.getAccountDetails.url.mapping=/getAccount
+eureka.instance.appname=${spring.application.name}
+#eureka.client.service-url.defaultZone=http://localhost:9193/eureka/
+eureka.client.service-url.defaultZone=https://mypcfeureka.cfapps.io/eureka/
