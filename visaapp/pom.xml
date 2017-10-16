@@ -1,0 +1,70 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  
+  <modelVersion>4.0.0</modelVersion>  
+  <groupId>com.gl.visaapp</groupId>
+  <artifactId>visaapp</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  <name>Visa App System</name>
+  <description>Visa Application System</description>
+  
+  <properties>
+    <!-- Enable Java 8 -->
+    <java.version>1.8</java.version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <!-- Configure the main class of our Spring Boot application -->
+    <start-class>com.gl.visaapp.VisaApplication</start-class>
+</properties>
+
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>1.5.4.RELEASE</version>
+  </parent>
+  
+  <dependencies>
+    <!-- Get the dependencies of a web application -->
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+ 
+    <!-- Spring Data MongoDB-->
+    <dependency>
+        <groupId>org.springframework.data</groupId>
+        <artifactId>spring-data-mongodb</artifactId>
+    </dependency>
+    
+    <!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-rest-core -->
+	<dependency>
+	    <groupId>org.springframework.data</groupId>
+	    <artifactId>spring-data-rest-core</artifactId>
+	    <version>2.0.0.RELEASE</version><!--$NO-MVN-MAN-VER$-->
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-commons-core -->
+	<dependency>
+	    <groupId>org.springframework.data</groupId>
+	    <artifactId>spring-data-commons-core</artifactId>
+	    <version>1.0.0.RELEASE</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-devtools -->
+	<dependency>
+	    <groupId>org.springframework.boot</groupId>
+	    <artifactId>spring-boot-devtools</artifactId>
+	    <version>1.5.7.RELEASE</version><!--$NO-MVN-MAN-VER$-->
+	</dependency>
+    
+</dependencies>
+ 
+<build>
+    <plugins>
+        <!-- Spring Boot Maven Support -->
+        <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+        </plugin>
+    </plugins>
+</build>
+</project>
