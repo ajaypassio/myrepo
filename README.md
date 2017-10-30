@@ -50,3 +50,8 @@ public class AveDate {
 		return convertedDate;
 	}
 }
+
+if(null!=String.valueOf(val))
+		return true;
+		else
+		return false;
